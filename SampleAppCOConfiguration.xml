@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adapterconfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" kimAppId="SampleApp" supportsTicker="true">
+  <co-list>
+    <co objectname="Switch" objectfunction="" number="1" eventAlways="true" cotype="Control" dpt="1.1" description="" bitsize="1" />
+    <co objectname="Switch control" objectfunction="" number="2" eventAlways="true" cotype="Control" dpt="2.1" description="" bitsize="2" />
+    <co objectname="Control dimming" objectfunction="" number="3" eventAlways="true" cotype="Control" dpt="3.7" description="" bitsize="4" />
+    <co objectname="Scaling" objectfunction="" number="4" eventAlways="true" cotype="Control" dpt="5.1" description="" bitsize="8" />
+    <co objectname="Scene number" objectfunction="" number="5" eventAlways="true" cotype="Control" dpt="17.1" description="" bitsize="8" />
+    <co objectname="Scene control" objectfunction="" number="6" eventAlways="true" cotype="Control" dpt="18.1" description="" bitsize="8" />
+    <co objectname="Scene info" objectfunction="" number="7" eventAlways="true" cotype="Control" dpt="26.1" description="" bitsize="8" />
+    <co objectname="Brightness" objectfunction="" number="8" eventAlways="true" cotype="Control" dpt="7.13" description="" bitsize="16" />
+    <co objectname="Lux" objectfunction="" number="9" eventAlways="true" cotype="Control" dpt="9.4" description="" bitsize="16" />
+    <co objectname="Value temp" objectfunction="" number="10" eventAlways="true" cotype="Control" dpt="9.1" description="" bitsize="16" />
+    <co objectname="Time of day" objectfunction="" number="11" eventAlways="true" cotype="Control" dpt="10.1" description="" bitsize="24" />
+    <co objectname="Date" objectfunction="" number="12" eventAlways="true" cotype="Control" dpt="11.1" description="" bitsize="24" />
+    <co objectname="Count 4" objectfunction="" number="13" eventAlways="true" cotype="Control" dpt="13.1" description="" bitsize="32" />
+    <co objectname="Acceleration angular" objectfunction="" number="14" eventAlways="true" cotype="Control" dpt="14.1" description="" bitsize="32" />
+    <co objectname="Energy" objectfunction="" number="15" eventAlways="true" cotype="Control" dpt="14.31" description="" bitsize="32" />
+    <co objectname="String" objectfunction="" number="16" eventAlways="true" cotype="Control" dpt="16.1" description="" bitsize="112" />
+    <co objectname="RGB" objectfunction="" number="17" eventAlways="true" cotype="Control" dpt="232.600" description="" bitsize="24" />
+	<co objectname="Switch" objectfunction="" number="31" eventAlways="true" cotype="Status" dpt="1.1" description="" bitsize="1" />
+    <co objectname="Switch control" objectfunction="" number="32" eventAlways="true" cotype="Status" dpt="2.1" description="" bitsize="2" />
+    <co objectname="Control dimming" objectfunction="" number="33" eventAlways="true" cotype="Status" dpt="3.7" description="" bitsize="4" />
+    <co objectname="Scaling" objectfunction="" number="34" eventAlways="true" cotype="Status" dpt="5.1" description="" bitsize="8" />
+    <co objectname="SceneNumber" objectfunction="" number="35" eventAlways="true" cotype="Status" dpt="17.1" description="" bitsize="8" />
+    <co objectname="Scene control" objectfunction="" number="36" eventAlways="true" cotype="Status" dpt="18.1" description="" bitsize="8" />
+    <co objectname="Scene info" objectfunction="" number="37" eventAlways="true" cotype="Status" dpt="26.1" description="" bitsize="8" />
+    <co objectname="Brightness" objectfunction="" number="38" eventAlways="true" cotype="Status" dpt="7.13" description="" bitsize="16" />
+    <co objectname="Lux" objectfunction="" number="39" eventAlways="true" cotype="Status" dpt="9.4" description="" bitsize="16" />
+    <co objectname="Value temp" objectfunction="" number="40" eventAlways="true" cotype="Status" dpt="9.1" description="" bitsize="16" />
+    <co objectname="Time of day" objectfunction="" number="41" eventAlways="true" cotype="Status" dpt="10.1" description="" bitsize="24" />
+    <co objectname="Date" objectfunction="" number="42" eventAlways="true" cotype="Status" dpt="11.1" description="" bitsize="24" />
+    <co objectname="Count 4" objectfunction="" number="43" eventAlways="true" cotype="Status" dpt="13.1" description="" bitsize="32" />
+    <co objectname="Acceleration angular" objectfunction="" number="44" eventAlways="true" cotype="Status" dpt="14.1" description="" bitsize="32" />
+    <co objectname="Energy" objectfunction="" number="45" eventAlways="true" cotype="Status" dpt="14.31" description="" bitsize="32" />
+    <co objectname="String" objectfunction="" number="46" eventAlways="true" cotype="Status" dpt="16.1" description="" bitsize="112" />
+    <co objectname="RGB" objectfunction="" number="47" eventAlways="true" cotype="Status" dpt="232.600" description="" bitsize="24" />
+	<co objectname="Serial text" objectfunction="" number="54" eventAlways="true" cotype="Control" dpt="16.1" description="" bitsize="112" />    
+  </co-list>
+  <parameter-list VisibleTextParameters="1" VisibleNumberParameters="1" VisibleIpAddressParameters="1">
+    <ip-parameters>
+      <ip-param number="0" description="IP parameter" default="127.0.0.1" />
+    </ip-parameters>
+    <number-parameters>
+      <number-param number="0" description="Number parameter" default="5" />
+    </number-parameters>
+    <text-parameters>
+      <text-param number="0" description="Text parameter" default="TextParameter" />
+    </text-parameters>
+  </parameter-list>
+</adapterconfig>
