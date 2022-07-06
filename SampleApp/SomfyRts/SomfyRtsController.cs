@@ -36,15 +36,14 @@ namespace SomfyRtsApp.SomfyRts
 
         public static SomfyRtsController CreateFromFile()
         {
-            string path = Path.Combine(IscApp.AppHost.SdCardPath, $"{nameof(SomfyRtsController)}.artset");
-            if (File.Exists(path))
+            if (File.Exists(GetSetFilePath()))
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(SomfyRtsController));
-                using (StreamReader r = new StreamReader(path))
+                using (StreamReader r = new StreamReader(GetSetFilePath()))
                 {
                     var s = (SomfyRtsController)serializer.Deserialize(r);
                     s.RunKeepAlive();
-                    Logger.Info($"Restored SomfyRtsController from " + path);
+                    Logger.Info($"Restored SomfyRtsController from " + GetSetFilePath());
                     return s;
                 }
             }
@@ -107,16 +106,21 @@ namespace SomfyRtsApp.SomfyRts
         public void Save()
         {
             XmlSerializer serializer = new XmlSerializer(typeof(SomfyRtsController));
-            string path = Path.Combine(IscApp.AppHost.SdCardPath, $"{nameof(SomfyRtsController)}.artset");
-            string dir = Path.GetDirectoryName(path);
+
+            string dir = Path.GetDirectoryName(GetSetFilePath());
             if (!Directory.Exists(dir))
             {
                 Directory.CreateDirectory(dir);
             }
-            using (StreamWriter w = new StreamWriter(path))
+            using (StreamWriter w = new StreamWriter(GetSetFilePath()))
             {
                 serializer.Serialize(w, this);
             }
+        }
+
+        private static string GetSetFilePath()
+        {
+            return Path.Combine(IscApp.AppHost.SdCardPath, $"{nameof(SomfyRtsController)}.artset");
         }
     }
 }
